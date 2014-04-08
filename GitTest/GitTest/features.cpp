@@ -28,3 +28,15 @@ int GetMax(int *input, int length)
 	}
 	return max;
 }
+//Features1
+int GetMin(int *input, int length)
+{
+	assert(input != NULL && length > 0);
+	int min = input[0];
+	for(int i = 1 ; i < length ; i ++)
+	{
+		if(input[i] < min)
+			min = input[i];
+	}
+	return min;
+}
