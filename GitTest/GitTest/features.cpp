@@ -1,4 +1,5 @@
 #include <iostream>
+#include <assert.h>
 #include "features.h"
 
 
@@ -11,4 +12,18 @@ int GetSum(int *input, int length)
 		sum += input[i];
 	}
 	return sum;
+}
+
+//Features2
+
+int GetMax(int *input, int length)
+{
+	assert(input != NULL && length > 0);
+	int max = input[0];
+	for(int i = 1 ; i < length ; i ++)
+	{
+		if(input[i] > max)
+			max = input[i];
+	}
+	return max;
 }
