@@ -3,6 +3,6 @@
 
 
 int GetSum(int *input, int length);
-
+int GetMin(int *input, int length);
 
 #endif
